@@ -1,1 +1,1 @@
-# Html-Css-JavaScript-Study
+# Html-Css-JavaScript-pratice
