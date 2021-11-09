@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setFontColor(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+        }
+        function nightDayHandler(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+                setFontColor('red');
+
+            }
+            else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night';
+                setFontColor('blue');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>My Webpage</h1>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <li> <a href="">Test</a></li>
+    <li> <a href="">Test</a></li>
+    <li> <a href="">Test</a></li>
+    <h2>JavaScript</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error eligendi numquam voluptates sapiente
+        nulla non assumenda minus ducimus facere, omnis quisquam quas quo rerum dolores. Amet similique necessitatibus
+        architecto.
+    </p>
+</body>
+
+</html>
