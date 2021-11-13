@@ -55,3 +55,30 @@ console.log(fruits);
 fruits.shift();
 console.log(fruits);
 
+// splice : remove an item by index position
+fruits.push('straberry', 'pitch');
+console.log(fruits);
+fruits.splice(1,1); // banana 만 지우기
+console.log(fruits);
+fruits.splice(1,1,'lemon', 'melon');
+console.log(fruits);
+
+// combine two arrays
+const fruits2 = ['amond', 'mango'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
+
+//5, Searching 
+// indexOf and include : find the index
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('melon')); // 몇번째 인덱스에 있는지
+console.log(fruits.indexOf('cherry')); // 없는 문자는 -1로 출력
+console.log(fruits.includes('melon')); // 있는지 없는지
+
+// lastIndexOf
+console.clear(  );
+fruits.push('apple');
+console.log(fruits);
+console.log(fruits.indexOf('apple'));
+console.log(fruits.lastIndexOf('apple'));
